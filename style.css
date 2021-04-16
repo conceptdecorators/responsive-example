@@ -1153,6 +1153,9 @@ p {
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
+  .col-2 .controller {
+    width: 100%;
+  }
   .client-in ul {
     padding: 30px;
     margin: 0;
