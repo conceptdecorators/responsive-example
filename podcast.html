@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="programs.html">PROGRAMS</a></li>
+            <li><a href="coaching.html">COACHING</a></li>
+            <li><a href="podcast.html">PODCAST</a></li>
+          </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+    </div>
+
+    <section class="hero-section">
+      <div class="podcast-face" style="opacity: 1"></div>
+      <div class="herotitle">
+        <h1 style="opacity: 1" class="white-text">LISTEN TO LEGACY MAKERS</h1>
+        <p style="opacity: 1" class="white-text">
+          Helping you find PURPOSE, SUCCESS, and happiness in life!
+        </p>
+      </div>
+    </section>
+    <div class="section s-api">
+      <div class="container c-api">
+        <div class="c-grid-api">
+          <div id="sub-point" class="c-api-child">
+            <h2 class="h2-smaller">
+              Listen to the most straight forward, thought provocative &
+              Inspirational Show
+            </h2>
+            <p class="p-developerapi">
+              Davida mixes it up with her humor, personality, engaging us with
+              vivid conversations with community leaders,tastemakers, educators,
+              entertainers, faith leaders and everyday people that are on the
+              daily grind and on the rise.This podcast will make you laugh, cry,
+              dance, sing and bring real experiences whether you are discovering
+              your new best friend, learning something or considering a new
+              perspective. <br />
+            </p>
+            <div class="spacing"></div>
+            <div class="social-links">
+              <h2">
+                Coming to audio streaming devices soon!
+              </h2>
+              <div class="spacing"></div>
+              <img src="images/soundcloud-logo-24.png" alt="" />
+              <img src="images/spotify-logo-24.png" alt="" />
+              <img src="images/apple-logo-24.png" alt="" />
+            </div>
+            <!-- <a
+              href="https://dashboard.withabound.com/signup"
+              class="button button--secondary w-button"
+              >Explore our API Docs</a
+            > -->
+          </div>
+        </div>
+        <img
+          src="images/Music-Player-Davida-new.png"
+          loading="lazy"
+          alt=""
+          class="codecard"
+        />
+        <img
+          src="images/Music-Player-Davida-new.png"
+          loading="lazy"
+          width="817"
+          alt=""
+          class="codecardmobile"
+        />
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
