@@ -1,0 +1,22 @@
+{
+  "name": "davida_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conceptdecorators/responsive-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conceptdecorators/responsive-example/issues"
+  },
+  "homepage": "https://github.com/conceptdecorators/responsive-example#readme",
+  "devDependencies": {
+    "dotenv": "^9.0.2"
+  }
+}
