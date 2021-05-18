@@ -12,22 +12,36 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <!-- <img src="images/logo.png" class="logo" /> -->
+   <!-- nav start -->
+   <div class="container">
+    <div class="navbar">
+      <header>
+        <!-- <div class="logo">LOGO</div> -->
         <div class="logo"></div>
         <nav>
-          <ul id="menuList">
+          <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href="programs.html">PROGRAMS</a></li>
+            <li class="sub-menu">
+              <a href="programs.html" title="Click to expand"
+                >PROGRAMS<i class="bx bx-caret-down"></i
+              ></a>
+
+              <ul>
+                <li><a href="events.html">EVENTS</a></li>
+              </ul>
+            </li>
             <li><a href="coaching.html">COACHING</a></li>
+
             <li><a href="podcast.html">PODCAST</a></li>
           </ul>
         </nav>
-        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
-      </div>
+        <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+        <!-- <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" /> -->
+      </header>
     </div>
+  </div>
+  <!-- nav end -->
 
     <section class="hero-section">
       <div class="podcast-face" style="opacity: 1"></div>
@@ -90,7 +104,7 @@
 
  <!-- chat bot -->
     <script src="//code.tidio.co/vfcws5wmhma9rpveejddjyi9bs9rm8yf.js" async></script>
-    <script>
+     <!-- <script>
       var menuList = document.getElementById("menuList");
       menuList.style.maxHeight = "0px";
       function togglemenu() {
@@ -100,6 +114,19 @@
           menuList.style.maxHeight = "0px";
         }
       }
-    </script>
+    </script> -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".menu-toggle").click(function () {
+      $("nav").toggleClass("active");
+    });
+    $("ul li").click(function () {
+      $(this).siblings().toggleClass("active");
+      $(this).removeClass("active");
+    });
+  });
+</script>
   </body>
 </html>

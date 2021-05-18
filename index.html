@@ -12,29 +12,36 @@
     />
   </head>
   <body>
+    <!-- nav start -->
     <div class="container">
       <div class="navbar">
-        <!-- <img src="images/logo.png" class="logo" /> -->
-        <div class="logo"></div>
-        <nav>
-          <ul id="menuList">
-            <li><a href="about.html">ABOUT</a></li>
-            <li>
-              <a href="programs.html">PROGRAMS</a>
-              <ul>
-                <li><a href="events.html">EVENTS</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="events.html">Events</a></li>
-              </ul>
-            </li>
-            <li><a href="coaching.html">COACHING</a></li>
-            <li><a href="podcast.html">PODCAST</a></li>
-          </ul>
-        </nav>
-        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
+        <header>
+          <!-- <div class="logo">LOGO</div> -->
+          <div class="logo"></div>
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li class="sub-menu">
+                <a href="programs.html" title="Click to expand"
+                  >PROGRAMS<i class="bx bx-caret-down"></i
+                ></a>
+  
+                <ul>
+                  <li><a href="events.html">EVENTS</a></li>
+                </ul>
+              </li>
+              <li><a href="coaching.html">COACHING</a></li>
+  
+              <li><a href="podcast.html">PODCAST</a></li>
+            </ul>
+          </nav>
+          <div class="menu-toggle"><i class="bx bx-menu"></i></div>
+           <!-- <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" /> --> 
+        </header>
       </div>
     </div>
+    <!-- nav end -->
     <div class="client-container">
       <div class="row">
         <div class="col-1">
@@ -121,6 +128,9 @@
           </div>
           
       </section>
+
+
+
  <div class="divide-section">
   <div class="custom-shape-divider-top-1618016826">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -194,55 +204,6 @@ alt=""
         </div> 
       </div> 
    
-<!-- photo gallery -->
-
-<div class="wrapper-gallery client-wrap">
-  <h1>GALLERY </h1>
-  <hr />
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-2.jpg" alt="" />
-      <div class="caption">Boss Lady</div>
-    </div>
-  </div>
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-3.jpg" alt="" />
-      <div class="caption">Inspiring Others</div>
-    </div>
-  </div>
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-4.jpg" alt="" />
-      <div class="caption">Vintage Life</div>
-    </div>
-  </div>
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-7.jpg" alt="" />
-      <div class="caption">Support Families</div>
-    </div>
-  </div>
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-8.jpg" alt="" />
-      <div class="caption">Confidence-Boosting</div>
-    </div>
-  </div>
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-10.jpg" alt="" />
-      <div class="caption">Self Care</div>
-    </div>
-  </div>
-  <div class="photo-item">
-    <div class="polaroid">
-      <img src="images/davida-event-9.jpg" alt="" />
-      <div class="caption">Entrepreneur</div>
-    </div>
-  </div>
-  
-</div>
 
 
       <section class="columns pb_section canvas">
@@ -426,10 +387,11 @@ and healthier lives.&nbsp;<br></p></a></div>
       </div>
     </section> -->
 
-    <script src="//code.tidio.co/vfcws5wmhma9rpveejddjyi9bs9rm8yf.js" async></script>
 
      <!-- chat bot -->
-    <script>
+    <script src="//code.tidio.co/vfcws5wmhma9rpveejddjyi9bs9rm8yf.js" async></script>
+
+    <!-- <script>
       var menuList = document.getElementById("menuList");
       menuList.style.maxHeight = "0px";
       function togglemenu() {
@@ -439,6 +401,19 @@ and healthier lives.&nbsp;<br></p></a></div>
           menuList.style.maxHeight = "0px";
         }
       }
-    </script>
+    </script> -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".menu-toggle").click(function () {
+      $("nav").toggleClass("active");
+    });
+    $("ul li").click(function () {
+      $(this).siblings().toggleClass("active");
+      $(this).removeClass("active");
+    });
+  });
+</script>
   </body>
 </html>
