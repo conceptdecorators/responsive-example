@@ -10,7 +10,16 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate.css in the header -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+  
   <body>
     <!-- nav start -->
     <div class="container">
@@ -44,7 +53,7 @@
     <!-- nav end -->
     <div class="client-container">
       <div class="row">
-        <div class="col-1">
+        <div data-aos="fade-up" class="col-1 animated">
           <!-- <div class="color-box">
             <div class="container">
               <h3>LIFE
@@ -55,16 +64,16 @@
             </div>
           </div>      -->
           <img
-                  src="images/Fire-Starter.png"
+                  src="/images/Fire-Starter.png"
                   alt=""
                 />
                 <img
-                  src="images/step-out.png"
+                  src="/images/step-out.png"
                   alt=""
                 />
         </div>
-        <div class="col-2">
-          <img src="images/Davida-1.png" class="controller" />
+        <div data-aos="fade-up" class="col-2 animated">
+          <img src="/images/Davida-1.png" class="controller" />
           <!-- <div class="color-box">
             <div class="side-container">
               <h3 style="color: black"><span class="side-text">
@@ -81,7 +90,7 @@
           </div> -->
         </div>
       </div>
-      <section class="openings animated fadeInUp" >
+      <!-- <section class="openings" >
 
         <div class="group">
             <div class="left-col">
@@ -91,14 +100,78 @@
                <a href="/about/" class="home-about-btn">SUBSCRIBE NOW</a>
             </div>
         </div>          
-          </section>
+          </section> -->
+
+
+<!-- Newsletter -->
+<section id="subscribe" class="section-6 odd subscribe featured all">
+  <div class="container smaller">
+      <div class="row text-center intro">
+          <div class="col-12">
+              <h2 class="mid-text">Newsletter</h2>
+              <p class="text-max-800">Subscribe to our newsletter and follow our content closely. Receive news based on what has to do with you. We promise not to send promotions you don't like.</p>
+          </div>
+      </div>
+      
+      <div class="row-form">
+        <div class="wrapper">
+            <form action="/signup" method="POST">
+              <div class="form_wrap">
+                <div class="input_grp">
+                  <div class="input_wrap">
+                    <input
+                      type="text"
+                      name="firstName"
+                      id="first-name"
+                      class="form-control"
+                      placeholder="First Name"
+                      required
+                      id="lname"
+                      id="fname"
+                    />
+                  </div>
+                  <div class="input_wrap">
+                    <input
+                      type="text"
+                      name="lastName"
+                      id="last-name"
+                      class="form-control"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </div>
+                </div>               
+                <div class="input_wrap">
+                    <input
+                    type="text"
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="input_wrap">
+                  <input type="submit" value="Register Now" class="submit_btn" />
+                </div>    
+              </div>
+            </form>
+          </div>
+        </div>
+  </div>
+</section>
+<!-- End Newsletter -->
+
     </div>
+
+
 
     <!-- <div class="wrapper"> -->
      
       <section class="columns pb_section">
         <div class="column">
-          <div class="text-row">
+          <div class="text-row animate__animated animate__fadeInRightBig aos-item">
             <div class="text_inner">
               <p>ABOUT DAVIDA'S WORK</p>
               <h2 class="mid-text">AUTHOR</h2>
@@ -115,16 +188,17 @@
           
         </div>
         <div class="column-2">
-          <div class="text_inner_2">
+          <div class="text_inner_2 animate__animated animate__fadeInRightBig aos-item">
             <img src="/images/Davida_Thompson_book.png" alt="" />     
+            <div class="alignment_center">
+              <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=e0d4c9afaeab5&mfid=1618011622980_e0d4c9afaeab5#/checkout/openButton" >  
+              <button type="button" class="alignment_center" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=e0d4c9afaeab5&mfid=1618011622980_e0d4c9afaeab5#/checkout/openButton">
+                  Buy Now
+                 <!-- <img src="images/arrow.png" alt="" /> -->
+              </button></a>
+            </div>
           </div>
-          <div class="alignment_center">
-            <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=e0d4c9afaeab5&mfid=1618011622980_e0d4c9afaeab5#/checkout/openButton" >  
-            <button type="button" class="alignment_center" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=e0d4c9afaeab5&mfid=1618011622980_e0d4c9afaeab5#/checkout/openButton">
-                Buy NOW
-               <!-- <img src="images/arrow.png" alt="" /> -->
-            </button></a>
-          </div>
+          
           </div>
           
       </section>
@@ -143,15 +217,15 @@
 <div id="contentBox">
     
   <div class="column-box">
-<img src="images/DAVIDA-SPEAKER-LOGOS/layout-life-coach.png" alt="">
+<img src="/images/DAVIDA-SPEAKER-LOGOS/layout-life-coach.png" alt="">
   </div>
 
   <div class="column-box">
-    <img src="images/DAVIDA-SPEAKER-LOGOS/layout-author.png" alt="">
+    <img src="/images/DAVIDA-SPEAKER-LOGOS/layout-author.png" alt="">
   </div>
 
   <div class="column-box">
-    <img src="images/DAVIDA-SPEAKER-LOGOS/layout-speaker.png" alt="">
+    <img src="/images/DAVIDA-SPEAKER-LOGOS/layout-speaker.png" alt="">
   </div>  
 </div>
  </div>     
@@ -162,41 +236,41 @@
         <div class="client-in">
           <ul>
             <li>
-              <img src="images/DAVIDA-SPEAKER-LOGOS/Rutgers_University_Camden_logo.png" alt="" />      
+              <img src="/images/DAVIDA-SPEAKER-LOGOS/Rutgers_University_Camden_logo.png" alt="" />      
             </li>
             <li>
               <img
-              src="images/DAVIDA-SPEAKER-LOGOS/N.C.-A&T.png"
+              src="/images/DAVIDA-SPEAKER-LOGOS/N.C.-A&T.png"
               alt=""
             />
              </li> 
             <li>
-              <img src="images/DAVIDA-SPEAKER-LOGOS/NJC+Logo.png" alt="" />
+              <img src="/images/DAVIDA-SPEAKER-LOGOS/NJC+Logo.png" alt="" />
            </li>
         <li>
-          <img src="images/DAVIDA-SPEAKER-LOGOS/UNC.png" alt=""/>
+          <img src="/images/DAVIDA-SPEAKER-LOGOS/UNC.png" alt=""/>
         </li>  
         <li>
-          <img src="images/DAVIDA-SPEAKER-LOGOS/morning-star-white.png" alt="" />
+          <img src="/images/DAVIDA-SPEAKER-LOGOS/morning-star-white.png" alt="" />
         </li>
  
  <li>
-  <img src="images/DAVIDA-SPEAKER-LOGOS/Revolutions_Mills.png" alt="" />      
+  <img src="/images/DAVIDA-SPEAKER-LOGOS/Revolutions_Mills.png" alt="" />      
 </li>
 <li>
-<img src="images/DAVIDA-SPEAKER-LOGOS/junior-league-red.png" alt="" />
+<img src="/images/DAVIDA-SPEAKER-LOGOS/junior-league-red.png" alt="" />
 </li>
 <li>
-  <img src="images/DAVIDA-SPEAKER-LOGOS/UNGC-small.png" alt="" />
+  <img src="/images/DAVIDA-SPEAKER-LOGOS/UNGC-small.png" alt="" />
 </li>
 
 <li> 
-<img src="images/DAVIDA-SPEAKER-LOGOS/United-Healthcare.png" alt=""/>
+<img src="/images/DAVIDA-SPEAKER-LOGOS/United-Healthcare.png" alt=""/>
 </li>  
 
 <li>
 <img
-src="images/DAVIDA-SPEAKER-LOGOS/piedmont-club.png"
+src="/images/DAVIDA-SPEAKER-LOGOS/piedmont-club.png"
 alt=""
 />
 </li> 
@@ -207,41 +281,44 @@ alt=""
 
 
       <section class="columns pb_section canvas">
-        <div class="column">
+        <div class="column animate__animated animate__fadeInRightBig aos-item">
           <div class="text-row">
             <div class="text_inner">
               <div class="connect-content">
                 <p class="new-canvas_2-text">ABOUT<br></p></a>
                 <a href="/about" target="_self" class="sie-new-canvas_1 se" data-sid="new-canvas_1" style="transform: scale(1, 1) translate(0px, 0px);">
-                 <div style="position: relative;top: 0px;left: 0px;display: block;background-image: url(images/DAVIDA-SPEAKER-LOGOS/title-davida-helio-pink.png);" data-img="new-canvas_1" class="se-img se-gr slzy">
+                 <div style="position: relative;top: 0px;left: 0px;display: block;background-image: url(/images/DAVIDA-SPEAKER-LOGOS/title-davida-helio-pink.png);" data-img="new-canvas_1" class="se-img se-gr slzy">
                    <div class="latest-link"></div>
                  </div>          
                  </a>
+                 <p class="sie-new-canvas_3-text text-block">Davida Thompson is a life coach who naturally gravitated toward women’s
+                  empowerment due to her personal experiences. Davida was also motivated 
+                  by hurting women who struggled with managing work-life balance. 
+                  Having survived molestation, mental abuse, domestic violence, and neglect,
+                   from that point forward it was her goal to help motivate women to live happy 
+                  and healthier lives.&nbsp;<br></p></a>
               </div>
+             
             </div>
           </div>
          
           
-<p class="sie-new-canvas_3-text">Davida Thompson is a life coach who naturally gravitated toward women’s
-empowerment due to her personal experiences. Davida was also motivated 
-by hurting women who struggled with managing work-life balance. 
-Having survived molestation, mental abuse, domestic violence, and neglect,
- from that point forward it was her goal to help motivate women to live happy 
-and healthier lives.&nbsp;<br></p></a></div>
+</div>
           
         </div>
         <div class="column-2">
-          <div class="text_inner_2">
+          <div class="text_inner_2 animate__animated animate__fadeInRightBig aos-item">
             <img src="/images/Davida-2.jpg" class="shrink" alt="" />
-            
+            <div class="alignment_center">
+              <a href="about.html" >  
+              <button type="button" class="alignment_center" href="about.html">
+                  My Story
+                 <!-- <img src="images/arrow.png" alt="" /> -->
+              </button>
+            </a>
+            </div>
           </div>
-          <div class="alignment_center">
-            <a href="about.html" >  
-            <button type="button" class="alignment_center" href="about.html">
-                My Story
-               <!-- <img src="images/arrow.png" alt="" /> -->
-            </button></a>
-          </div>
+          
           </div>
           
     
@@ -388,6 +465,44 @@ and healthier lives.&nbsp;<br></p></a></div>
     </section> -->
 
 
+    <!-- footer -->
+<div class="footer">
+  <div class="inner_footer">
+    <div class="logo_container">
+      <img src="" alt="">
+    </div>
+
+    <div class="footer_third">
+      <h1>Need Help?</h1>
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy policy</a>
+    </div>
+
+    <div class="footer_third">
+      <h1>More</h1>
+      <a href="#">Brochures</a>
+      <a href="#">Donate</a>
+      <a href="#">Governace</a>
+      <a href="#">Imapact Reports</a>
+    </div>
+
+    <div class="footer_third">
+      <h1>Follow Us</h1>
+     <li class="social-icons"><a href="#"><i class='bx bxl-facebook-circle' style='color:#ffffff'></i></a></li> 
+     <li class="social-icons"><a href="#"><i class='bx bxl-twitter' style='color:#ffffff'  ></i></a></li> 
+     <li class="social-icons"><a href="#"><i class='bx bxl-instagram-alt' style='color:#ffffff' ></i></a></li> 
+     
+     <span>
+       email: davidathompson@outlook.com <br>
+     </span>
+     
+    </div>
+
+  </div>
+</div>
+<!-- end footer -->
+    
+
      <!-- chat bot -->
     <script src="//code.tidio.co/vfcws5wmhma9rpveejddjyi9bs9rm8yf.js" async></script>
 
@@ -403,6 +518,7 @@ and healthier lives.&nbsp;<br></p></a></div>
       }
     </script> -->
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
@@ -415,5 +531,33 @@ and healthier lives.&nbsp;<br></p></a></div>
     });
   });
 </script>
+<!-- scroll library -->
+<!-- <script src="animate-on-scroll.min.js"></script> -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: true, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
   </body>
 </html>
