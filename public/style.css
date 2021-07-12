@@ -340,6 +340,13 @@ button img {
   /* margin: 5px 0; */
   /* padding: 5% 0; */
 }
+.columns-events {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* margin: 5px 0; */
+  /* padding: 5% 0; */
+}
 .pb_section {
   padding: 10% 0;
 }
@@ -1825,6 +1832,25 @@ p {
   #contentBox {
     margin: 0 auto;
     width: 100%;
+  }
+  .columns-events {
+    display: block;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* margin: 5px 0; */
+    /* padding: 5% 0; */
+  }
+  /* elfsight-app event*/
+  .eaec-root-layout-component.jsx-3849537829 {
+    max-width: 440px;
+  }
+  .eaec-name-component.jsx-2458611904 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  .eaec-events-calendar-title.jsx-403451104 {
+    color: rgb(17, 17, 17);
+    font-size: 25px;
   }
 }
 @media only screen and (max-width: 320px) {
